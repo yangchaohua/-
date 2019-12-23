@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 void main_deInit(void)
 {
     gstMainWork.workStatus = 0; 	//停止工作
-    usleep(1000);		            //1 ms
+    usleep(2000);		            //1 ms
     gFaceDeal.faceDeal_deInit();
     clientSocket_deInit(&clientSocketInfo);
 }
