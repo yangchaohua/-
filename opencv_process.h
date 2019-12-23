@@ -13,7 +13,7 @@
 #include <QDebug>
 #include <pthread.h>
 
-#define MAT_SCALE		        3               //图像缩小比例，减少计算量
+#define MAT_SCALE		        3.0               //图像缩小比例，减少计算量
 #define LBPH_REC_THRES_0		125.0	        //LBPH设定阈值/相似度0
 #define LBPH_REC_THRES_80		85.0	        //LBPH识别过滤阈值/相似度80
 #define LBPH_REC_THRES_100		65.0	        //LBPH相似度100阈值
@@ -65,6 +65,7 @@ private:
 
 /* 图像处理/格式转化线程 */
 void* faceopencv_handle(void *arg);
+
 
 /* 人脸检测识别线程 */
 void* faceDetRec_handle(void *arg);
